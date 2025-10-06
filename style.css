@@ -1,5 +1,6 @@
-*{
+    *{
           margin: 0;
+          box-sizing: border-box;
           font-family: 'Lobster', cursive;
       }
 
@@ -13,7 +14,7 @@
           flex-direction: column;
       }
 
-      /* Мобильные стили (по умолчанию) */
+      /* Мобильные стили*/
       header{
           background-color: #00a2ff;
           width: 100%;
@@ -137,21 +138,21 @@
           .container{
               max-width: 960px;
               margin: 0 auto;
-              display: block; /* Убираем flex на десктопе */
+              display: block; 
           }
 
           .flex-table {
               width: 80%;
               margin: 0 auto;
-              order: 0; /* Сбрасываем order на десктопе */
+              order: 0; 
           }
 
           .links-list {
-              order: 0; /* Сбрасываем order на десктопе */
+              order: 0;
           }
 
           .form-container {
-              order: 0; /* Сбрасываем order на десктопе */
+              order: 0;
           }
 
           .flex-row {
