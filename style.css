@@ -1,0 +1,171 @@
+*{
+          margin: 0;
+          font-family: 'Lobster', cursive;
+      }
+
+      body{
+          background-image: url(https://avatars.mds.yandex.net/i?id=bc7ecf8bd67d437fa6d02ad74c6c7de61be8d29d-3855076-images-thumbs&n=13);
+          background-repeat: repeat;
+          background-size: contain;
+          width: 100%;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+      }
+
+      /* Мобильные стили (по умолчанию) */
+      header{
+          background-color: #00a2ff;
+          width: 100%;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .name{
+          margin: 10px 0;
+          text-align: center;
+      }
+      
+      #logo{
+          width: 80px;
+          height: 80px;
+      }
+
+      nav{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+      }
+
+      .nav-link{
+          padding: 8px 0;
+          font-size: 18px;
+          text-align: center;
+          width: 100%;
+      }
+
+      .container{
+          width: 100%;
+          flex: 1;
+          background-color: #8ad0ff;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+      }
+
+      /* Стили для флексбокс-таблицы */
+      .flex-table {
+          width: 100%;
+          border: 1px solid grey;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          order: 1; /* На мобильных таблица первая */
+      }
+
+      .links-list {
+          order: 2; /* На мобильных список ссылок второй */
+      }
+
+      .form-container {
+          order: 3; /* Форма третья */
+      }
+
+      .flex-row {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .flex-cell {
+          border: 1px solid grey;
+          padding: 8px;
+      }
+
+      .flex-header {
+          font-weight: bold;
+          background-color: #f0f0f0;
+      }
+
+      .chet {
+          background: #1d32a7;
+      }
+
+      footer{
+          background-color: #00a2ff;
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+      }
+
+      /* Десктопные стили */
+      @media screen and (min-width: 768px) {
+          header{
+              height: 150px;
+              flex-direction: row;
+              justify-content: space-between;
+              padding: 0;
+          }
+
+          .name{
+              float: left;
+              margin: 0;
+          }
+          
+          #logo{
+              width: 100px;
+              height: 100px;
+              margin: 20px;
+              float: left;
+          }
+
+          nav{
+              float: right;
+              flex-direction: row;
+              width: auto;
+              margin: 20px;
+          }
+
+          .nav-link{
+              padding-left: 30px;
+              font-size: 25px;
+              width: auto;
+          }
+
+          .container{
+              max-width: 960px;
+              margin: 0 auto;
+              display: block; /* Убираем flex на десктопе */
+          }
+
+          .flex-table {
+              width: 80%;
+              margin: 0 auto;
+              order: 0; /* Сбрасываем order на десктопе */
+          }
+
+          .links-list {
+              order: 0; /* Сбрасываем order на десктопе */
+          }
+
+          .form-container {
+              order: 0; /* Сбрасываем order на десктопе */
+          }
+
+          .flex-row {
+              flex-direction: row;
+          }
+
+          .flex-cell {
+              flex: 1;
+          }
+
+          footer{
+              height: 150px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      }
