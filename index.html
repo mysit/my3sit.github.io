@@ -48,9 +48,9 @@
         <li>
           <ol>
             Нумерованный список ссылок
-            <li><a href="https://www.kubsu.ru">1</a></li>
-            <li><a href="https://www.kubsu.ru">2</a></li>
-            <li><a href="https://www.kubsu.ru">3</a></li>
+            <li><a href="https://www.kubsu.ru" title="1">1</a></li>
+            <li><a href="https://www.kubsu.ru" title="2">2</a></li>
+            <li><a href="https://www.kubsu.ru" title="3">3</a></li>
           </ol>
         </li>
       </ul>
@@ -126,12 +126,12 @@
         <label>
           Любимый язык программирования:
           <br>
-            <select name="listbox" multiple="multiple">
+            <select name="listbox[]" multiple="multiple">
               <option value="Значение1" selected="selected">Pascal</option>
-              <option value="Значение6" selected="selected">Python</option>
-              <option value="Значение3" selected="selected">C++</option>
-              <option value="Значение7" selected="selected">Java</option>
-              <option value="Значение2" selected="selected">C</option>
+              <option value="Значение6">Python</option>
+              <option value="Значение3">C++</option>
+              <option value="Значение7">Java</option>
+              <option value="Значение2">C</option>
             </select>
           <br/>
         </label>
@@ -149,4 +149,5 @@
       </form>
     </div>
     <footer><p>(c) Дмитрий Крючков ПМ21/2</p></footer>
+
   </body>
